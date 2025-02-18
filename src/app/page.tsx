@@ -22,7 +22,6 @@ async function getProducts() {
 
 async function getImages() {
   const res = await fetch("https://www.giovankov.com/api/image.json")
-  console.log(res)
   if (!res.ok) {
     throw new Error("Failed to fetch images")
   }
